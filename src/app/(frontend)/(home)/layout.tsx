@@ -13,6 +13,7 @@ const Layout = async ({ children }: { children: React.ReactNode }) => {
     depth: 1,
     pagination: false,
     where: { parent: { exists: false } },
+    sort: 'name',
   });
 
   const formatedData = data.docs.map((doc) => ({
